@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainPictoFragment">
+
+    <fragment
+        android:id="@+id/mainPictoFragment"
+        android:name="com.rodrigojbarrera.ipicto.MainPictoFragment"
+        android:label="fragment_main_picto"
+        tools:layout="@layout/fragment_main_picto" >
+        <action
+            android:id="@+id/action_mainPictoFragment_to_detailPitcoFragment"
+            app:destination="@id/detailPitcoFragment" />
+        <action
+            android:id="@+id/action_mainPictoFragment_to_sentencePictoFragment"
+            app:destination="@id/sentencePictoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPitcoFragment"
+        android:name="com.rodrigojbarrera.ipicto.DetailPitcoFragment"
+        android:label="fragment_detail_pitco"
+        tools:layout="@layout/fragment_detail_pitco" />
+    <fragment
+        android:id="@+id/sentencePictoFragment"
+        android:name="com.rodrigojbarrera.ipicto.SentencePictoFragment"
+        android:label="fragment_sentence_picto"
+        tools:layout="@layout/fragment_sentence_picto" />
+</navigation>
